@@ -1,0 +1,92 @@
+#toplogo{
+    max-width: 200px;
+    max-height: 100px;
+    transition: transform .2s;
+}
+#toplogo:hover{
+    transform: scale(1.1);
+}
+#nav-items {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: bold;
+}
+#nav-item{
+    transition: transform .3s;
+    padding: 10px;
+    position: relative;
+}
+#nav-item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.5s ease-in-out;
+}
+#nav-item:hover::after{
+    width: 100%;
+    bottom: 0;
+}
+#nav-item:hover {
+    animation-play-state: running;
+    opacity: 1;
+    transform: scale(1.3);
+    font-weight: bold;
+}
+#searcher{
+    max-width: 15px;
+    max-height: 15px;
+}
+#inputer{
+    max-width: 80%;
+}
+#karuzela{
+    max-width: 80%;
+    max-height: 80%;
+    padding-top: 30px;
+    margin: 10px auto 20px;
+    display: block;
+}
+#card{
+    flex-direction: column;
+    max-width: 188px;
+    max-height: 350px;
+    margin: 10px;
+    background-color: whitesmoke;
+    transition: background-color 1s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+}
+#card:hover{
+    transform: translateY(-5px);
+    background-color: lightgray;
+}
+h2, h3{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#product{
+    max-width: 300px;
+    max-height: 515px;
+    margin: 10px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+#product img{
+    max-width: 296px;
+    max-height: 444px;
+}
+#product:hover{
+    transform: scale(0.9);
+}
+footer{
+    margin-top: 2%;
+    background-color: black;
+    color: aliceblue;
+}
